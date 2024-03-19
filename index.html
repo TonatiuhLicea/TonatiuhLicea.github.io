@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ENCRIPTADOR</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-home.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="imgLogo"><img src="imag/logo alura.png"></h1>
+        </header>
+        <main>
+            <ul class="cuadros">
+                <li>
+                    <form>
+                        <textarea cols="10" rows="20" id="texto" class="textoIng" contenteditable="true" placeholder="Ingresa el texto aqui"></textarea>              
+                    </form>
+                    <p class="condicion"> &#33 Solo letras minusculas y sin acentos</p>
+                    <div class="botonesED">
+                        <button type="button" onclick="encriptar()" class="botonEncriptar" id="btEncriptar" > ENCRIPTAR</button>
+                        <button type="button" onclick="desEncriptar()" class="botonDesencriptar" id="btDesencriptar">DESENCRIPTAR</button>
+                    </div>                    
+                </li>  
+                <li>
+                    <div class="resultado" id="cuadroPresentacion">
+                        <img class="muñeco" src="imag/muneco.png">
+                        <h2 class="mensajeInicial"> Ningun mensaje fue encontrado</h2>
+                        <p class="mensajeInstruccion">Ingrese el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <div class="resultadoBlanco" id="textoResultado">
+                        <textarea cols="10" rows="20" id="texFinal" class="textoEnDes" contenteditable="true" ></textarea>
+                        
+                        <button onclick="copiar()" class="botonCopiar" id="btCopiar" >COPIAR</button>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <footer class="piePagina">
+            <p>Raul Tonatiuh Vazquez Licea</p>
+            <nav >
+                <ul>
+                    <li class="links"><a href="https://github.com/TonatiuhLicea">GitHub</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="ENCRIPTADOR.js" defer></script>
+    </body>
+
+</html>
